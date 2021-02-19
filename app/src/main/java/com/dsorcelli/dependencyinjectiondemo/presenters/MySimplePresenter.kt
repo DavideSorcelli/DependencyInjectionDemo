@@ -7,6 +7,6 @@ import com.dsorcelli.dependencyinjectiondemo.repositories.HelloRepository
  */
 class MySimplePresenter(private val repo: HelloRepository) {
 
-    fun sayHello() = "${repo.giveHello()} from $this"
+    fun sayHello() = repo.giveHello()
 
 }
